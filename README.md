@@ -24,7 +24,7 @@ Jetpack Compose + Kotlin で構築しました。
 | 状態管理 | ViewModel + StateFlow + Hilt |
 | DB | Room |
 | 広告 | Google AdMob（Adaptive Banner / Interstitial） |
-| その他 | Firebase Crashlytics, In-App Review, In-App Updates API |
+| その他 | Firebase Crashlytics, In-App Review, In-App Updates API, Github Actions |
 
 
 ## 📸 スクリーンショット
