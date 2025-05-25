@@ -4,6 +4,7 @@
 Jetpack Compose + Kotlin で構築しました。
 
 PlayStoreで公開中です。
+
 [https://play.google.com/store/apps/details?id=net.unifar.mydiary](https://play.google.com/store/apps/details?id=net.unifar.mydiary)
 
 ## ✨ 特徴
