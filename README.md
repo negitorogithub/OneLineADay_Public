@@ -3,8 +3,8 @@
 🖊️ 毎日1行だけ、気軽に書き残すためのシンプルな日記アプリ  
 Jetpack Compose + Kotlin で構築しました。
 
-近日中にPlayStoreに公開予定です。
-
+PlayStoreで公開中です。
+[https://play.google.com/store/apps/details?id=net.unifar.mydiary](https://play.google.com/store/apps/details?id=net.unifar.mydiary)
 
 ## ✨ 特徴
 
