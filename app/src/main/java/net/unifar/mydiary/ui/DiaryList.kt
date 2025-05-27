@@ -18,7 +18,7 @@ import androidx.compose.runtime.key
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import net.unifar.mydiary.model.entity_and_dao.DiariesViewModel
+import net.unifar.mydiary.model.DiariesViewModel
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.combinedClickable
@@ -38,8 +38,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.sp
 import net.unifar.mydiary.R
-import net.unifar.mydiary.model.entity_and_dao.DiaryListUiState
-import net.unifar.mydiary.model.entity_and_dao.DiaryUiModel
+import net.unifar.mydiary.model.DiaryListUiState
+import net.unifar.mydiary.model.DiaryUiModel
 
 
 // リストComposable

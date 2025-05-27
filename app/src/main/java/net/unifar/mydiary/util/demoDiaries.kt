@@ -1,6 +1,6 @@
 package net.unifar.mydiary.util
 
-import net.unifar.mydiary.model.entity_and_dao.Diary
+import net.unifar.mydiary.db.Diary
 import java.text.SimpleDateFormat
 import java.util.Locale
 

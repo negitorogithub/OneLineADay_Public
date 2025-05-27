@@ -1,8 +1,8 @@
 package net.unifar.mydiary.repository
 
 import kotlinx.coroutines.flow.Flow
-import net.unifar.mydiary.model.entity_and_dao.Diary
-import net.unifar.mydiary.model.entity_and_dao.DiaryDao
+import net.unifar.mydiary.db.Diary
+import net.unifar.mydiary.db.DiaryDao
 import javax.inject.Inject
 
 class DiaryRepository

@@ -46,10 +46,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.viewModelScope
-import net.unifar.mydiary.model.entity_and_dao.DayType
+import net.unifar.mydiary.db.DayType
 import net.unifar.mydiary.ui.theme.localExtraColors
 import kotlinx.coroutines.launch
-import net.unifar.mydiary.model.entity_and_dao.DiariesViewModel
+import net.unifar.mydiary.model.DiariesViewModel
 import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.graphics.Color

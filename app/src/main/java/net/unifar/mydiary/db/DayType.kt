@@ -1,7 +1,5 @@
-package net.unifar.mydiary.model.entity_and_dao
+package net.unifar.mydiary.db
 
-import android.os.Build
-import androidx.annotation.RequiresApi
 import java.time.DayOfWeek
 
 enum class DayType {

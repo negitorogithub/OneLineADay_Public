@@ -1,25 +1,27 @@
-package net.unifar.mydiary.model.entity_and_dao
+package net.unifar.mydiary.model
 
 import androidx.lifecycle.ViewModel
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import net.unifar.mydiary.repository.DiaryRepository
-import net.unifar.mydiary.util.generateSortableId
-import java.util.Date
-import kotlinx.coroutines.flow.stateIn
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import net.unifar.mydiary.BuildConfig
+import net.unifar.mydiary.db.Diary
+import net.unifar.mydiary.model.DiaryUiModel
+import net.unifar.mydiary.model.toUiModel
+import net.unifar.mydiary.repository.DiaryRepository
 import net.unifar.mydiary.util.demoDiaries
+import net.unifar.mydiary.util.generateSortableId
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
+import java.util.Date
 import java.util.Locale
 import javax.inject.Inject
-
 
 sealed class DiaryListUiState {
     object Loading : DiaryListUiState()
@@ -40,7 +42,7 @@ class DiariesViewModel @Inject constructor(private val diaryRepository: DiaryRep
             .map { it.toUiModel(editingId == it.id) }
     }.stateIn(
         viewModelScope,
-        SharingStarted.Lazily,
+        SharingStarted.Companion.Lazily,
         initialValue = emptyList()
     )
 
@@ -102,7 +104,7 @@ class DiariesViewModel @Inject constructor(private val diaryRepository: DiaryRep
                     .toLocalDate().format(DateTimeFormatter.ofPattern(pattern))
             }
         }
-        .stateIn(viewModelScope, SharingStarted.Lazily, emptyMap())
+        .stateIn(viewModelScope, SharingStarted.Companion.Lazily, emptyMap())
 
     fun isEditing(): Boolean {
         return editingId.value != null && diariesUiModel.value.any { it.id == editingId.value }

@@ -1,13 +1,12 @@
-package net.unifar.mydiary.model.entity_and_dao
+package net.unifar.mydiary.model
 
-import android.os.Build
-import androidx.annotation.RequiresApi
-import java.time.DayOfWeek
+import net.unifar.mydiary.db.DayType
+import net.unifar.mydiary.db.Diary
+import net.unifar.mydiary.db.toDayType
 import java.text.SimpleDateFormat
-import java.util.Locale
-import java.time.LocalDate
 import java.time.ZoneId
 import java.util.Date
+import java.util.Locale
 
 data class DiaryUiModel(
     val id: String,

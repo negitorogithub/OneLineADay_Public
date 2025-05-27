@@ -25,15 +25,9 @@ import android.content.Intent
 import android.content.res.ColorStateList
 import android.net.Uri
 import android.os.Build
-import android.util.TypedValue
 import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.TextView
-import androidx.compose.foundation.ScrollState
-import androidx.compose.foundation.gestures.Orientation
-import androidx.compose.foundation.gestures.ScrollableState
-import androidx.compose.foundation.gestures.scrollable
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
@@ -46,7 +40,6 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
-import androidx.hilt.navigation.compose.hiltViewModel
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.nativead.NativeAd
@@ -61,9 +54,8 @@ import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.modules.SerializersModule
-import net.unifar.mydiary.model.entity_and_dao.Diary
-import net.unifar.mydiary.model.entity_and_dao.DiaryDao
-import net.unifar.mydiary.model.entity_and_dao.SettingViewModel
+import net.unifar.mydiary.db.Diary
+import net.unifar.mydiary.db.DiaryDao
 import java.io.File
 import java.util.Date
 
@@ -99,7 +91,6 @@ fun SettingView(snackbarHostState: SnackbarHostState) {
     }
     val scrollableState = rememberScrollState()
 
-    val viewModel: SettingViewModel = hiltViewModel()
     Column(
         modifier = Modifier
             .verticalScroll(scrollableState)

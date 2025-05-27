@@ -1,4 +1,4 @@
-package net.unifar.mydiary.model.entity_and_dao
+package net.unifar.mydiary.db
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -56,7 +56,7 @@ interface DiaryDao {
 
     @Query("DELETE FROM diary")
     suspend fun deleteAllDiaries()
-    
+
     @Query("SELECT COUNT(*) FROM Diary")
     suspend fun diariesCount(): Int
 

@@ -1,9 +1,6 @@
-package net.unifar.mydiary.model
+package net.unifar.mydiary.db
 
-import androidx.room.Database
-import androidx.room.RoomDatabase
 import androidx.room.TypeConverter
-import androidx.room.TypeConverters
 import java.util.Date
 
 

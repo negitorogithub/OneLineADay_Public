@@ -70,7 +70,7 @@ import androidx.lifecycle.viewModelScope
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
-import net.unifar.mydiary.model.entity_and_dao.DiariesViewModel
+import net.unifar.mydiary.model.DiariesViewModel
 import kotlinx.coroutines.launch
 
 @Composable

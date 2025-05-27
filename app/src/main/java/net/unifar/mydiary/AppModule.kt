@@ -7,8 +7,8 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import net.unifar.mydiary.model.entity_and_dao.DiaryDao
-import net.unifar.mydiary.model.AppDatabase
+import net.unifar.mydiary.db.AppDatabase
+import net.unifar.mydiary.db.DiaryDao
 import javax.inject.Singleton
 
 @Module
