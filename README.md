@@ -35,10 +35,10 @@ PlayStoreで公開中です。
 
 ## 📸 スクリーンショット
 
-| 書く画面                                                                                                              | 一覧画面                                                                                                              | 設定画面                                                                                                              |
-|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| ![Screenshot_20250520_200153](https://github.com/user-attachments/assets/a68d25f4-e75e-4837-9afd-472e8220c620)    | ![Screenshot_20250520_200011](https://github.com/user-attachments/assets/0fb19ca4-3069-427e-92c3-b695a3700699)    | ![Screenshot_20250522_110533](https://github.com/user-attachments/assets/d895610c-58a9-4c7a-b5a6-1693af97d873)    |
-| ![Screenshot_20250520_230720_en](https://github.com/user-attachments/assets/f9da0121-3236-4446-b630-d4b0ff1b93ff) | ![Screenshot_20250520_230645_en](https://github.com/user-attachments/assets/79de9dc1-47cb-474d-bb47-9633b5792ff0) | ![Screenshot_20250522_110453_en](https://github.com/user-attachments/assets/39270908-cb28-4813-b846-b70f41fb053e) |
+| 書く画面                                                                                                              | 一覧画面                                                                                                              | 設定画面                                                                                                              |プラン選択画面|
+|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|----------------|
+|<img width="300" alt="Screenshot_20251114_005726" src="https://github.com/user-attachments/assets/34c121fb-5dab-4717-a8cc-519dc0e8d7a1" />|<img width="300"  alt="Screenshot_20251113_231746" src="https://github.com/user-attachments/assets/49767e66-9c33-462b-b94d-c05937f9854c" />|<img width="300" alt="Screenshot_20251113_231806" src="https://github.com/user-attachments/assets/e40a29e5-5ec5-4f71-bc55-b9b4f749e2bb" />|<img width="300" alt="Screenshot_20251113_231757" src="https://github.com/user-attachments/assets/6ebb96f8-c419-4b88-a9b2-5e884f685c30" />|
+|<img width="300" alt="Screenshot_20251114_005908" src="https://github.com/user-attachments/assets/dc52a975-1f2a-42d0-9e9b-a4c3b1d6cdf2" />|<img width="300" alt="Screenshot_20251113_232113" src="https://github.com/user-attachments/assets/2dda5444-9088-428a-bc7a-224a1bd17e40" />|<img width="300" alt="Screenshot_20251113_232124" src="https://github.com/user-attachments/assets/96683762-28da-497d-ad36-ae659a6ae54e" />|<img width="300" alt="Screenshot_20251113_232118" src="https://github.com/user-attachments/assets/f4888674-bc26-44e4-812d-6030a02b417e" />|
 
 ## 🔧 セットアップ方法
 
@@ -49,4 +49,5 @@ git clone https://github.com/your-username/one-line-diary.git
 ```
 
 2. google-services.jsonを配置
-   app/src/debugとapp/src/release両方に配置する必要があります！
+
+app/src/debugとapp/src/release両方に配置する必要があります！
