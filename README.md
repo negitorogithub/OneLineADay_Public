@@ -47,3 +47,5 @@ PlayStoreで公開中です。
 git clone https://github.com/your-username/one-line-diary.git
 ```
 
+2. google-services.jsonを配置
+   app/src/debugとapp/src/release両方に配置する必要があります！
